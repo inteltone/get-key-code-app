@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, system-ui, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-block-end: 1rem;
+  color: #198754;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.key-block {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  inline-size: min(40rem, 100%);
+  block-size: 100vh;
+  margin-inline: auto;
+}
+
+.key-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.key-list .key-item {
+  text-align: center;
+}
+
+.key-list .key-item p {
+  margin-block-end: 0.5rem;
+}
+
+.key-list .key-item small {
+  display: block;
+  inline-size: 100%;
+  padding: 1rem;
+  color: #fff;
+  background-color: #198754;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.33rem;
+}
+
+@media (max-width: 767px) {
+  .key-list {
+    grid-template-columns: max-content;
+  }
+}
